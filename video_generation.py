@@ -14,7 +14,7 @@ def video_generation(path, output, fps, time):
     :return: NONE
     """
     img_array = []
-    for filename in [path + '{0}.png'.format(i) for i in range(25)]:
+    for filename in [path + '{0}.png'.format(i) for i in range(26)]:
         img = cv2.imread(filename)
         # height, width, layers = img.shape
         size = (800, 800)
@@ -31,7 +31,7 @@ def video_generation(path, output, fps, time):
 # Images path
 path = './data/unraveling_example/figures/'
 # Video path
-output_path = path + 'video.avi'
+output_path = path + 'video_no_label_edge_color.mp4'
 # Value of fps
 fps = 1
 # Time for each of the figure
